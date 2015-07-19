@@ -8,14 +8,14 @@ end
 get "/match/:match_num/:avoid_num" do |match, avoid|
 
 	animals = [
-   	 	{:description => "blah", :image => "blah", :name => "Giraffe"},
-		{:description => "blah", :image => "blah", :name => "Sponge"},
-		{:description => "blah", :image => "blah", :name => "Oprah"},
-		{:description => "blah", :image => "blah", :name => "Pissing Ostrich"},
-		{:description => "blah", :image => "blah", :name => "Angry Baboon"},
-		{:description => "blah", :image => "blah", :name => "Derpy Penguin"},
-		{:description => "blah", :image => "blah", :name => "Beefcake"},
-		{:description => "blah", :image => "blah", :name => "Quokka"}
+   	 	{:description => "Freakishly tall.", :image => "giraffe.jpg", :name => "Giraffe"},
+		{:description => "You're ready.", :image => "sponge.jpg", :name => "Sponge"},
+		{:description => "\#Illuminati", :image => "oprah.jpg", :name => "Oprah"},
+		{:description => "You are an enigma.  So majestic and yet so disgusting.", :image => "ostrich.jpg", :name => "Pissing Ostrich"},
+		{:description => "Whoa dude.  Chill out.  Maybe you should see a therapist or something for your anger issues.", :image => "baboon.jpg", :name => "Angry Baboon"},
+		{:description => "You're the kinda dude who gets knocked down by a wave and pops right back up.", :image => "penguin.jpg", :name => "Derpy Penguin"},
+		{:description => "*various catcalling noises*  You definitely know how to work your assets.", :image => "beefcake.jpg", :name => "Beefcake"},
+		{:description => "Always happy.  Like, maybe a little too happy.", :image => "quokka.jpg", :name => "Quokka"}
 	]
 
 	@match_name = animals[match.to_i][:name]
@@ -28,17 +28,15 @@ get "/animal/:index" do |index|
 
 
 animals = [
-	{:description => "blah", :image => "blah", :name => "Giraffe"},
-	{:description => "blah", :image => "blah", :name => "Sponge"},
-	{:description => "blah", :image => "blah", :name => "Oprah"},
-	{:description => "blah", :image => "blah", :name => "Pissing Ostrich"},
-	{:description => "blah", :image => "blah", :name => "Angry Baboon"},
-	{:description => "blah", :image => "blah", :name => "Derpy Penguin"},
-	{:description => "blah", :image => "blah", :name => "Beefcake"},
-	{:description => "blah", :image => "blah", :name => "Quokka"}
-
-	
-]
+   	 	{:description => "Freakishly tall.", :image => "giraffe.jpg", :name => "Giraffe"},
+		{:description => "You're ready.", :image => "sponge.jpg", :name => "Sponge"},
+		{:description => "\#Illuminati", :image => "oprah.jpg", :name => "Oprah"},
+		{:description => "You are an enigma.  So majestic and yet so disgusting.", :image => "ostrich.jpg", :name => "Pissing Ostrich"},
+		{:description => "Whoa dude.  Chill out.  Maybe you should see a therapist or something for your anger issues.", :image => "baboon.jpg", :name => "Angry Baboon"},
+		{:description => "You're the kinda dude who gets knocked down by a wave and pops right back up.", :image => "penguin.jpg", :name => "Derpy Penguin"},
+		{:description => "*various catcalling noises*  You definitely know how to work your assets.", :image => "beefcake.jpg", :name => "Beefcake"},
+		{:description => "Always happy.  Like, maybe a little too happy.", :image => "quokka.jpg", :name => "Quokka"}
+	]
 @match_num = rand(8)
 @avoid_num = rand(8)
 
