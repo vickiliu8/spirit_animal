@@ -6,13 +6,16 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2>You're a perfect match with <%= @match_name %></h1>
-                <img src="/images/<%= @match_pic%>">
-
+                <div class = "circle">
+                	<img src="/images/<%= @match_pic%>" class= "img-circle">
+                </div>
                 <h2>You should avoid <%= @avoid_name %></h2>
-				<img src="/images/<%= @avoid_pic%>">
+                <div class = "circle">
+					<img src="/images/<%= @avoid_pic%>" class= "img-circle">
+				</div>
 
                 <ul class="list-unstyled">
-                    <li><a href="/">Go Back</a></li>
+                    <li><a href="/" class="btn btn-info">Go Back </a></li>
                 </ul>
             </div>
         </div>

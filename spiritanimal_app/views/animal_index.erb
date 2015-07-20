@@ -4,11 +4,11 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h1>You're spirit animal is <%= @name%>!</h1>
-                <img src="/images/<%= @image%>">
+                	<img src="/images/<%= @image%>" class = "img-circle">
                 <p class="lead"><%= @description%></p>
                 <ul class="list-unstyled">
-                    <li><a href="/">Go Back</a></li>
-                    <li><a href="/match/<%= @match_num %>/<%=@avoid_num%>"> Find my spirit animal match! </a></li>
+                    <li><a href="/" class="btn btn-info" >Go Back</a></li>
+                    <li><a href="/match/<%= @match_num %>/<%=@avoid_num%>" class="btn btn-info"> Find my spirit animal match! </a></li>
                 </ul>
             </div>
         </div>

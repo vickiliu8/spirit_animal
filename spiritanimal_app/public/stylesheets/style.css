@@ -3,9 +3,14 @@
 	margin-top: 100px;
 }
 
+
 img {
 	padding: 5%;
 	height: 500px
-	width: 500px;
-	overflow:hidden;
+	border: 5px solid black;
+}
+
+
+li {
+	padding: 5px;
 }
