@@ -1,16 +1,17 @@
 .container {
 
 	margin-top: 100px;
+
 }
 
 
 img {
 	padding: 5%;
 	height: 500px
-	border: 5px solid black;
+	
 }
-
 
 li {
 	padding: 5px;
 }
+
