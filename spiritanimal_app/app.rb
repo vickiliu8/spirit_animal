@@ -20,6 +20,8 @@ get "/match/:match_num/:avoid_num" do |match, avoid|
 
 	@match_name = animals[match.to_i][:name]
 	@avoid_name = animals[avoid.to_i][:name]
+	@match_pic = animals[match.to_i][:image]
+	@avoid_pic = animals[avoid.to_i][:image]
 	erb :match_index
 end
 

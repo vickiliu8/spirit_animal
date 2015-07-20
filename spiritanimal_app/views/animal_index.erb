@@ -1,6 +1,17 @@
-<p>Animal: <%= @name %></p>
-<p>Image: <img src="/images/<%= @image %>"></p>
-<p>Description: <%= @description %></p>
 
-<p><a href="/">go back </a></p>
-<p><a href="/match/<%= @match_num %>/<%=@avoid_num%>"> find my match! </a></p>
+<div class="container">
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>You're spirit animal is <%= @name%>!</h1>
+                <img src="/images/<%= @image%>">
+                <p class="lead"><%= @description%></p>
+                <ul class="list-unstyled">
+                    <li><a href="/">Go Back</a></li>
+                    <li><a href="/match/<%= @match_num %>/<%=@avoid_num%>"> Find my spirit animal match! </a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+
+ </div>
